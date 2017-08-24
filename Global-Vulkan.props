@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <VulkanReqsDir>$(CommonDir)Lib\Ext\Vulkan\1.0.49.0\</VulkanReqsDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(VulkanReqsDir)SDK\Include\;$(VulkanReqsDir)SDK\Include\vulkan\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="VulkanReqsDir">
+      <Value>$(VulkanReqsDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
